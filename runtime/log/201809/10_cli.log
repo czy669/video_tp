@@ -1,0 +1,9 @@
+[ 2018-09-10T15:17:52+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000906s ]
+[ info ] [ LOG ] INIT File
+[ 2018-09-10T15:17:52+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-09-10T15:17:52+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002045s ]
+[ 2018-09-10T15:17:52+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-09-10T15:17:52+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.026170s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ 2018-09-10T15:17:52+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'trans' [ RunTime:0.015412s ]
+[ 2018-09-10T15:17:52+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_trans' [ RunTime:0.019242s ]
+[ 2018-09-10T15:17:52+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'dage_gouwuduodu' AND table_name = 'fa_trans' ORDER BY ORDINAL_POSITION [ RunTime:0.025102s ]

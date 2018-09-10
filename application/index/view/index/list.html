@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	{include file='common/meta'}
+</head>
+<body>
+
+<!-- 头部 -->
+{include file='common/header'}
+
+<div class="show_content" style="padding-top:15px;">
+	<!-- 过渡线 -->
+	<div class="hr_content" style="margin-top:0;"></div>
+	<!-- 筛选条件 -->
+	<div class="selectej">
+		
+		<div class="selectej_con" style="border: 0;">
+			<div class="selectej_con_l">{$select_area.name}：</div>
+			<div class="selectej_con_r">
+				{volist name="$select_area.data" id="type"}
+				<a {eq name="area_id" value="$type.id"}class="selctenda"{/eq} onclick="href_url('{$area_url}&area_id={$type.id}')">{$type.title}</a>
+				{/volist}
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="selectej_con" style="border: 0;">
+			<div class="selectej_con_l">{$select_cate.name}：</div>
+			<div class="selectej_con_r">
+				{volist name="$select_cate.data" id="type"}
+				<a {eq name="cate_id" value="$type.id"}class="selctenda"{/eq} onclick="href_url('{$cate_url}&cate_id={$type.id}')">{$type.title}</a>
+				{/volist}
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- 排序 -->
+<div class="choice">
+	<div class="choice_c">
+		<span>排序：</span>
+		<span onclick="href_url('{$sort_url}&sort=1')" class='checkbox_class'><i {eq name="sorts" value="1"}class="selecti"{/eq}></i></span>
+		<a {eq name="sorts" value="1"}class="selctenda_a"{/eq} onclick="href_url('{$sort_url}&sort=1')">综合排序</a>
+		<span onclick="href_url('{$sort_url}&sort=2')" class='checkbox_class'><i {eq name="sorts" value="2"}class="selecti"{/eq}></i></span>
+		<a {eq name="sorts" value="2"}class="selctenda_a"{/eq} onclick="href_url('{$sort_url}&sort=2')">热门排序</a>
+	</div>
+</div>
+
+<!-- 内容区域 -->
+<div class="content">
+	{volist name="data" id="vo" key="key"}
+	<div class="content_c" {if condition="$key%5 == 1"}style="margin-left: 0;"{/if}>
+		<div class="content_c_img">
+			<a onclick="href_url('/index/index/show.html?id={$vo.id}')"><img class="lazy" data-original="__CDN__{$vo.cover}"></a>
+		</div>
+		<div class="content_c_title"><a onclick="href_url('/index/index/show.html?id={$vo.id}')">{$vo.title}</a></div>
+		<div class="content_c_bottom"><span>添加时间：{$vo.createtime,'Y-m-d'|datetime}</span><span class="content_c_bottom_hits">点击量：{$vo.hits}</span></div>
+	</div>
+	{/volist}
+	<div class="clear"></div>
+</div>
+
+<!-- 分页 -->
+<div class="pages">{$page}</div>
+
+<!-- 过渡线 -->
+<div class="hr_content"></div>
+
+<!-- 底部 -->
+{include file='common/footer'}
+</body>
+<script>
+
+</script>
+</html>

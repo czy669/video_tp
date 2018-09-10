@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+{include file='common/meta'}
+</head>
+<body>
+
+<!-- 头部 -->
+{include file='common/header'}
+<div class="show_content" style="padding:0;">
+	<!-- banner -->
+	{include file='common/banner'}
+	
+	<!-- 导航 -->
+	<div class="banner_head">
+		<div class="banner_head_c">
+			<div class="banner_head_c_title">内容：</div>
+			<div class="banner_head_c_con">
+				{volist name='cate_list' id='vo'}
+				<a onclick="href_url('/index/index/list.html?list&cate_id={$vo.id}')">{$vo.title}</a>
+				{/volist}
+			</div>
+		</div>
+		<div class="banner_head_c">
+			<div class="banner_head_c_title">地区：</div>
+			<div class="banner_head_c_con">
+				{volist name='area_list' id='vo'}
+				<a onclick="href_url('/index/index/list.html?list&area_id={$vo.id}')">{$vo.title}</a>
+				{/volist}
+			</div>
+		</div>
+		<div class="banner_head_c" style="border:0;">
+			<div class="banner_head_c_title">标签：</div>
+			<div class="banner_head_c_con">
+				{foreach $trans_list as $vo}
+				<a onclick="href_url('/index/index/list.html?list&key={$vo.name}')">{$vo.name}</a>
+				{/foreach}
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 内容 -->
+{volist name="data" id="vo"}
+	<!-- 内容导航 -->
+	<div class="con_header">
+		<div class="con_header_title"><b><i class="fa fa-group"></i> {$vo.type_name}</b><a onclick="href_url('/index/index/list.html')">更多 ></a></div>
+		<div class="con_header_con" style="display:none;">
+			{volist name="vo.type" id="type" key="type_key"}
+			{neq name="type_key" value="1"} | {/neq}<a onclick="href_url('{$type.url}')">{$type.nickname}</a>
+			{/volist}
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<!-- 内容区域 -->
+	<div class="content">
+		{volist name="vo.data" id="list" key='d_key'}
+		<div class="content_c" {if condition="$d_key%5 == 1"}style="margin-left: 0;"{/if}>
+			<div class="content_c_img">
+				<a onclick="href_url('/index/index/show.html?id={$list.id}')"><img class="lazy" data-original="__CDN__{$list.cover}"></a>
+			</div>
+			<div class="content_c_title"><a onclick="href_url('/index/index/show.html?id={$list.id}')">{$list.title}</a></div>
+			<div class="content_c_bottom"><span>添加时间：{$list.createtime,'Y-m-d'|datetime}</span><span class="content_c_bottom_hits">点击量：{$list.hits}</span></div>
+		</div>
+		{/volist}
+		<div class="clear"></div>
+	</div>
+{/volist}
+
+<!-- 底部 -->
+{include file='common/footer'}
+</body>
+<script>
+
+</script>
+</html>

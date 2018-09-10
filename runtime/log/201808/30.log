@@ -1,0 +1,208 @@
+---------------------------------------------------------------
+[ 2018-08-30T19:36:35+08:00 ] 0.0.0.0 GET /
+[ info ] www.czyfastadmin.com:88/ [运行时间：3.142957s][吞吐率：0.32req/s] [内存消耗：3,670.94kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004689s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004234s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002102s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'footer',
+  4 => 'controller',
+  5 => 'header',
+  6 => 'title',
+  7 => 'banner',
+  8 => 'data',
+  9 => 'area_list',
+  10 => 'cate_list',
+  11 => 'trans_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190724s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.126027s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'footer' ) ORDER BY `weigh` DESC [ RunTime:0.124284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.120510s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , '/' , 'index' , '::1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0' , 1535628993) [ RunTime:0.135987s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'header' ) ORDER BY `weigh` DESC [ RunTime:0.122929s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'banner' ) ORDER BY `weigh` DESC [ RunTime:0.123182s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index1' ) ORDER BY `weigh` DESC [ RunTime:0.121899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.123089s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index1' LIMIT 1 [ RunTime:0.126834s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index1' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.125906s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index2' ) ORDER BY `weigh` DESC [ RunTime:0.127301s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index2' LIMIT 1 [ RunTime:0.120691s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index2' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.121714s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index3' ) ORDER BY `weigh` DESC [ RunTime:0.123396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index3' LIMIT 1 [ RunTime:0.122575s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index3' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.121612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_area` [ RunTime:0.123062s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_area` WHERE  `status` = 1 [ RunTime:0.120228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_cate` [ RunTime:0.123382s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_cate` WHERE  `status` = 1 [ RunTime:0.123294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_trans` [ RunTime:0.128285s ]
+[ sql ] [ SQL ] SELECT name,count(name) as num FROM `fa_trans` GROUP BY `name` ORDER BY `hots` DESC LIMIT 6 [ RunTime:0.122171s ]
+---------------------------------------------------------------
+[ 2018-08-30T19:36:36+08:00 ] 0.0.0.0 GET /index/ajax/lang?callback=define&controllername=index&v=1535628992
+[ info ] www.czyfastadmin.com:88/index/ajax/lang?callback=define&controllername=index&v=1535628992 [运行时间：0.071958s][吞吐率：13.90req/s] [内存消耗：2,350.45kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000282s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007067s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1535628992',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000692s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Ajax.php ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-30T19:36:36+08:00 ] 0.0.0.0 GET /assets/js/frontend/index.js?v=1535628992
+[ info ] www.czyfastadmin.com:88/assets/js/frontend/index.js?v=1535628992 [运行时间：0.076622s][吞吐率：13.05req/s] [内存消耗：1,635.18kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.016980s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'js',
+    2 => 'frontend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1535628992',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-30T19:38:55+08:00 ] 0.0.0.0 GET /
+[ info ] www.czyfastadmin.com:88/ [运行时间：2.927376s][吞吐率：0.34req/s] [内存消耗：3,446.87kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000304s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002467s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000773s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'footer',
+  4 => 'controller',
+  5 => 'header',
+  6 => 'title',
+  7 => 'banner',
+  8 => 'data',
+  9 => 'area_list',
+  10 => 'cate_list',
+  11 => 'trans_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.190467s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.117472s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'footer' ) ORDER BY `weigh` DESC [ RunTime:0.114598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.115586s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , '/' , 'index' , '::1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0' , 1535629132) [ RunTime:0.119654s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'header' ) ORDER BY `weigh` DESC [ RunTime:0.164848s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'banner' ) ORDER BY `weigh` DESC [ RunTime:0.113401s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index1' ) ORDER BY `weigh` DESC [ RunTime:0.114064s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.113096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index1' LIMIT 1 [ RunTime:0.112945s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index1' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.115230s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index2' ) ORDER BY `weigh` DESC [ RunTime:0.112253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index2' LIMIT 1 [ RunTime:0.112210s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index2' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.114436s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index3' ) ORDER BY `weigh` DESC [ RunTime:0.115553s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index3' LIMIT 1 [ RunTime:0.114600s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index3' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.113128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_area` [ RunTime:0.114436s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_area` WHERE  `status` = 1 [ RunTime:0.117930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_cate` [ RunTime:0.122095s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_cate` WHERE  `status` = 1 [ RunTime:0.118532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_trans` [ RunTime:0.132481s ]
+[ sql ] [ SQL ] SELECT name,count(name) as num FROM `fa_trans` GROUP BY `name` ORDER BY `hots` DESC LIMIT 6 [ RunTime:0.114508s ]

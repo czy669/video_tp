@@ -1,0 +1,3906 @@
+---------------------------------------------------------------
+[ 2018-09-06T11:21:12+08:00 ] 0.0.0.0 GET /
+[ info ] www.czyfastadmin.com:88/ [运行时间：0.771634s][吞吐率：1.30req/s] [内存消耗：4,179.72kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004338s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012184s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004352s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'footer',
+  4 => 'controller',
+  5 => 'header',
+  6 => 'title',
+  7 => 'banner',
+  8 => 'data',
+  9 => 'area_list',
+  10 => 'cate_list',
+  11 => 'trans_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042319s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.020143s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'footer' ) ORDER BY `weigh` DESC [ RunTime:0.023316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.028953s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , '/' , 'index' , '::1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0' , 1536204071) [ RunTime:0.040079s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'header' ) ORDER BY `weigh` DESC [ RunTime:0.016074s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'banner' ) ORDER BY `weigh` DESC [ RunTime:0.015968s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index1' ) ORDER BY `weigh` DESC [ RunTime:0.021421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.021850s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index1' LIMIT 1 [ RunTime:0.013807s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index1' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.024235s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index2' ) ORDER BY `weigh` DESC [ RunTime:0.017641s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index2' LIMIT 1 [ RunTime:0.021719s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index2' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.018534s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index3' ) ORDER BY `weigh` DESC [ RunTime:0.016528s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index3' LIMIT 1 [ RunTime:0.020117s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index3' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.014931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_area` [ RunTime:0.031394s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_area` WHERE  `status` = 1 [ RunTime:0.017642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_cate` [ RunTime:0.019419s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_cate` WHERE  `status` = 1 [ RunTime:0.018478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_trans` [ RunTime:0.019359s ]
+[ sql ] [ SQL ] SELECT name,count(name) as num FROM `fa_trans` GROUP BY `name` ORDER BY `hots` DESC LIMIT 6 [ RunTime:0.015843s ]
+---------------------------------------------------------------
+[ 2018-09-06T11:21:13+08:00 ] 0.0.0.0 GET /index/ajax/lang?callback=define&controllername=index&v=1536204071
+[ info ] www.czyfastadmin.com:88/index/ajax/lang?callback=define&controllername=index&v=1536204071 [运行时间：0.088209s][吞吐率：11.34req/s] [内存消耗：2,884.20kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000320s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001849s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1536204071',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000670s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Ajax.php ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:21:17+08:00 ] 0.0.0.0 GET /assets/js/frontend/index.js?v=1536204071
+[ info ] www.czyfastadmin.com:88/assets/js/frontend/index.js?v=1536204071 [运行时间：0.090823s][吞吐率：11.01req/s] [内存消耗：1,986.70kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000440s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007743s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'js',
+    2 => 'frontend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1536204071',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:24:08+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.111305s][吞吐率：8.98req/s] [内存消耗：2,175.91kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000549s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004777s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001027s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Too few arguments to function think\Process::__construct(), 0 passed in /Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/App.php on line 422 and at least 1 expected[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Process.php:126]
+---------------------------------------------------------------
+[ 2018-09-06T11:24:09+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] www.czyfastadmin.com:88/favicon.ico [运行时间：0.072374s][吞吐率：13.82req/s] [内存消耗：1,984.95kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000509s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002786s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:24:09+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] www.czyfastadmin.com:88/favicon.ico [运行时间：0.051098s][吞吐率：19.57req/s] [内存消耗：1,984.83kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000622s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001822s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:24:20+08:00 ] 0.0.0.0 GET /index/index/index
+[ info ] www.czyfastadmin.com:88/index/index/index [运行时间：0.848207s][吞吐率：1.18req/s] [内存消耗：4,182.34kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002201s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004768s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002057s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'footer',
+  4 => 'controller',
+  5 => 'header',
+  6 => 'title',
+  7 => 'banner',
+  8 => 'data',
+  9 => 'area_list',
+  10 => 'cate_list',
+  11 => 'trans_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037709s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.029829s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'footer' ) ORDER BY `weigh` DESC [ RunTime:0.022065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.018484s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/index/index' , 'index' , '::1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0' , 1536204260) [ RunTime:0.031326s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'header' ) ORDER BY `weigh` DESC [ RunTime:0.022062s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'banner' ) ORDER BY `weigh` DESC [ RunTime:0.027416s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index1' ) ORDER BY `weigh` DESC [ RunTime:0.019605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.046940s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index1' LIMIT 1 [ RunTime:0.021987s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index1' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.023008s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index2' ) ORDER BY `weigh` DESC [ RunTime:0.018484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index2' LIMIT 1 [ RunTime:0.015646s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index2' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.022928s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index3' ) ORDER BY `weigh` DESC [ RunTime:0.020313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index3' LIMIT 1 [ RunTime:0.017738s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index3' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.030159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_area` [ RunTime:0.029724s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_area` WHERE  `status` = 1 [ RunTime:0.015089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_cate` [ RunTime:0.020800s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_cate` WHERE  `status` = 1 [ RunTime:0.028095s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_trans` [ RunTime:0.025952s ]
+[ sql ] [ SQL ] SELECT name,count(name) as num FROM `fa_trans` GROUP BY `name` ORDER BY `hots` DESC LIMIT 6 [ RunTime:0.035021s ]
+---------------------------------------------------------------
+[ 2018-09-06T11:24:21+08:00 ] 0.0.0.0 GET /index/ajax/lang?callback=define&controllername=index&v=1536204260
+[ info ] www.czyfastadmin.com:88/index/ajax/lang?callback=define&controllername=index&v=1536204260 [运行时间：0.084827s][吞吐率：11.79req/s] [内存消耗：2,884.22kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001552s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/index/index/index',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1536204260',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000703s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Ajax.php ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:24:21+08:00 ] 0.0.0.0 GET /assets/js/frontend/index.js?v=1536204260
+[ info ] www.czyfastadmin.com:88/assets/js/frontend/index.js?v=1536204260 [运行时间：0.090108s][吞吐率：11.10req/s] [内存消耗：1,986.98kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008325s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'js',
+    2 => 'frontend',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/index/index/index',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1536204260',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:24:24+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.057940s][吞吐率：17.26req/s] [内存消耗：2,175.91kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000068s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002153s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000678s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Too few arguments to function think\Process::__construct(), 0 passed in /Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/App.php on line 422 and at least 1 expected[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Process.php:126]
+---------------------------------------------------------------
+[ 2018-09-06T11:24:47+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.074409s][吞吐率：13.44req/s] [内存消耗：2,175.91kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002429s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003559s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000748s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Too few arguments to function think\Process::__construct(), 0 passed in /Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/App.php on line 422 and at least 1 expected[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Process.php:126]
+---------------------------------------------------------------
+[ 2018-09-06T11:24:50+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.058718s][吞吐率：17.03req/s] [内存消耗：2,175.91kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000090s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001829s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000916s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Too few arguments to function think\Process::__construct(), 0 passed in /Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/App.php on line 422 and at least 1 expected[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Process.php:126]
+---------------------------------------------------------------
+[ 2018-09-06T11:25:52+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.131026s][吞吐率：7.63req/s] [内存消耗：2,176.06kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000609s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004251s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001046s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Too few arguments to function think\Process::__construct(), 0 passed in /Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/App.php on line 422 and at least 1 expected[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Process.php:126]
+---------------------------------------------------------------
+[ 2018-09-06T11:27:43+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.076367s][吞吐率：13.09req/s] [内存消耗：2,312.20kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000174s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003684s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002137s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:27:45+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.041207s][吞吐率：24.27req/s] [内存消耗：2,312.20kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001543s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000484s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:28:27+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.063043s][吞吐率：15.86req/s] [内存消耗：2,368.07kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000062s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002103s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000825s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\index\controller\Test::request()[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:20]
+---------------------------------------------------------------
+[ 2018-09-06T11:28:47+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.089075s][吞吐率：11.23req/s] [内存消耗：2,315.44kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000998s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004298s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000814s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:34:48+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.083082s][吞吐率：12.04req/s] [内存消耗：2,315.44kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000540s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004630s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000955s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:35:35+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.081652s][吞吐率：12.25req/s] [内存消耗：2,315.44kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000152s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006002s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001014s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:35:52+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.061395s][吞吐率：16.29req/s] [内存消耗：2,315.44kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000081s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001693s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000557s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:38:31+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.106690s][吞吐率：9.37req/s] [内存消耗：2,035.45kb] [文件加载：52]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000074s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003147s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001821s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '}'[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:18]
+---------------------------------------------------------------
+[ 2018-09-06T11:38:39+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.071558s][吞吐率：13.97req/s] [内存消耗：2,317.34kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000131s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001924s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000699s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:38:53+08:00 ] 0.0.0.0 GET /test/index
+[ info ] www.czyfastadmin.com:88/test/index [运行时间：0.055419s][吞吐率：18.04req/s] [内存消耗：1,986.66kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000155s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004387s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:38:56+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.045116s][吞吐率：22.17req/s] [内存消耗：1,986.66kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002806s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:03+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.043359s][吞吐率：23.06req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000074s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001712s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:04+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.036823s][吞吐率：27.16req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004799s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:05+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.038881s][吞吐率：25.72req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000062s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001591s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:05+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.036616s][吞吐率：27.31req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000130s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002291s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:06+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.035121s][吞吐率：28.47req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001607s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:07+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.036361s][吞吐率：27.50req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002361s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:07+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.036382s][吞吐率：27.49req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002967s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:07+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.039430s][吞吐率：25.36req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002629s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:07+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.039879s][吞吐率：25.08req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002574s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:07+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.041790s][吞吐率：23.93req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000095s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002162s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:08+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.043827s][吞吐率：22.82req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001515s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:08+08:00 ] 0.0.0.0 GET /test/5
+[ info ] www.czyfastadmin.com:88/test/5 [运行时间：0.040335s][吞吐率：24.79req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003009s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:16+08:00 ] 0.0.0.0 GET /index/test/5
+[ info ] www.czyfastadmin.com:88/index/test/5 [运行时间：0.095161s][吞吐率：10.51req/s] [内存消耗：2,367.37kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000150s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003785s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => '5',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000549s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:39:20+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.047509s][吞吐率：21.05req/s] [内存消耗：2,317.34kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003087s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001996s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:40:18+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.082325s][吞吐率：12.15req/s] [内存消耗：2,317.24kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000073s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003791s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000896s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:41:20+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.066265s][吞吐率：15.09req/s] [内存消耗：2,315.44kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000076s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001905s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000653s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:42:58+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.072085s][吞吐率：13.87req/s] [内存消耗：1,984.24kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000071s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004471s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:43:05+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.053456s][吞吐率：18.71req/s] [内存消耗：2,318.90kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001916s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001414s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:43:06+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.049109s][吞吐率：20.36req/s] [内存消耗：2,318.90kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001723s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000523s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:43:08+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.046474s][吞吐率：21.52req/s] [内存消耗：2,318.90kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002448s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000989s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:43:09+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.041058s][吞吐率：24.36req/s] [内存消耗：2,318.90kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000109s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002791s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000485s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:43:12+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.041247s][吞吐率：24.24req/s] [内存消耗：2,318.90kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001854s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000763s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:46:14+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.063755s][吞吐率：15.69req/s] [内存消耗：1,987.37kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000120s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007236s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '4',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:46:16+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.034792s][吞吐率：28.74req/s] [内存消耗：1,987.59kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001663s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '4',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:46:17+08:00 ] 0.0.0.0 GET /test/4
+[ info ] www.czyfastadmin.com:88/test/4 [运行时间：0.036522s][吞吐率：27.38req/s] [内存消耗：1,987.59kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000112s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002911s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '4',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T11:46:25+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.052956s][吞吐率：18.88req/s] [内存消耗：2,316.15kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000090s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002489s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002332s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T13:58:34+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.091631s][吞吐率：10.91req/s] [内存消耗：1,984.24kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000085s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.013877s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T13:58:40+08:00 ] 0.0.0.0 GET /test/index
+[ info ] www.czyfastadmin.com:88/test/index [运行时间：0.065344s][吞吐率：15.30req/s] [内存消耗：2,318.91kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000094s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003170s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'index',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000875s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:03:17+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.076866s][吞吐率：13.01req/s] [内存消耗：1,988.18kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000183s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005935s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:03:21+08:00 ] 0.0.0.0 GET /test%E3%80%81
+[ info ] www.czyfastadmin.com:88/test%E3%80%81 [运行时间：0.040113s][吞吐率：24.93req/s] [内存消耗：1,988.19kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002295s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test、',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:03:30+08:00 ] 0.0.0.0 GET /test/
+[ info ] www.czyfastadmin.com:88/test/ [运行时间：0.055091s][吞吐率：18.15req/s] [内存消耗：1,988.21kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000114s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004355s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:03:35+08:00 ] 0.0.0.0 GET /test/inde
+[ info ] www.czyfastadmin.com:88/test/inde [运行时间：0.053434s][吞吐率：18.71req/s] [内存消耗：2,318.91kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000094s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001609s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'inde',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000806s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:03:59+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.098164s][吞吐率：10.19req/s] [内存消耗：2,317.36kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000131s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005306s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000843s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:04:04+08:00 ] 0.0.0.0 GET /test/d
+[ info ] www.czyfastadmin.com:88/test/d [运行时间：0.061819s][吞吐率：16.18req/s] [内存消耗：2,317.36kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000154s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003309s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000514s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:04:21+08:00 ] 0.0.0.0 GET /test?id=1
+[ info ] www.czyfastadmin.com:88/test?id=1 [运行时间：0.058772s][吞吐率：17.01req/s] [内存消耗：2,317.70kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000075s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002524s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001308s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:04:50+08:00 ] 0.0.0.0 GET /test/1
+[ info ] www.czyfastadmin.com:88/test/1 [运行时间：0.079044s][吞吐率：12.65req/s] [内存消耗：2,317.36kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000148s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002949s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000860s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:05:05+08:00 ] 0.0.0.0 GET /test/1
+[ info ] www.czyfastadmin.com:88/test/1 [运行时间：0.054889s][吞吐率：18.22req/s] [内存消耗：1,987.84kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001849s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '1',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:05:11+08:00 ] 0.0.0.0 GET /test/1
+[ info ] www.czyfastadmin.com:88/test/1 [运行时间：0.067806s][吞吐率：14.75req/s] [内存消耗：2,318.90kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000076s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001856s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000932s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:05:29+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.055199s][吞吐率：18.12req/s] [内存消耗：1,988.18kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000095s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004127s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:05:33+08:00 ] 0.0.0.0 GET /test/1
+[ info ] www.czyfastadmin.com:88/test/1 [运行时间：0.049143s][吞吐率：20.35req/s] [内存消耗：2,318.90kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001567s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000785s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:07:28+08:00 ] 0.0.0.0 GET /test/1
+[ info ] www.czyfastadmin.com:88/test/1 [运行时间：0.073628s][吞吐率：13.58req/s] [内存消耗：1,986.66kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000086s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003759s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '1',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:07:32+08:00 ] 0.0.0.0 GET /test/1
+[ info ] www.czyfastadmin.com:88/test/1 [运行时间：0.049770s][吞吐率：20.09req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001718s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '1',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:07:34+08:00 ] 0.0.0.0 GET /test/1
+[ info ] www.czyfastadmin.com:88/test/1 [运行时间：0.037954s][吞吐率：26.35req/s] [内存消耗：1,986.88kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000093s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002885s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => '1',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.czyfastadmin.com:88/test/1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:07:43+08:00 ] 0.0.0.0 GET /index/test/1
+[ info ] www.czyfastadmin.com:88/index/test/1 [运行时间：0.055585s][吞吐率：17.99req/s] [内存消耗：2,365.47kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001574s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => '1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000908s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:07:48+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.043339s][吞吐率：23.07req/s] [内存消耗：2,315.44kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001684s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000856s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:20+08:00 ] 0.0.0.0 GET /index/test/index
+[ info ] www.czyfastadmin.com:88/index/test/index [运行时间：0.057498s][吞吐率：17.39req/s] [内存消耗：2,315.82kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000186s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004541s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000520s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:23+08:00 ] 0.0.0.0 GET /test/index
+[ info ] www.czyfastadmin.com:88/test/index [运行时间：0.048517s][吞吐率：20.61req/s] [内存消耗：2,314.98kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000124s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004071s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000459s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:26+08:00 ] 0.0.0.0 GET /test/index
+[ info ] www.czyfastadmin.com:88/test/index [运行时间：0.039367s][吞吐率：25.40req/s] [内存消耗：2,314.98kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001717s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000471s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:28+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.048545s][吞吐率：20.60req/s] [内存消耗：2,314.97kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000242s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003476s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000885s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:30+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.041007s][吞吐率：24.39req/s] [内存消耗：2,314.97kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001573s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000463s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:37+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.044871s][吞吐率：22.29req/s] [内存消耗：2,314.97kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001650s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000804s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:40+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.051520s][吞吐率：19.41req/s] [内存消耗：2,314.97kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002678s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000945s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:43+08:00 ] 0.0.0.0 GET /test?1
+[ info ] www.czyfastadmin.com:88/test?1 [运行时间：0.043693s][吞吐率：22.89req/s] [内存消耗：2,315.29kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001734s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000919s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:08:47+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.038971s][吞吐率：25.66req/s] [内存消耗：2,314.97kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001595s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000483s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:09:23+08:00 ] 0.0.0.0 GET /index/test
+[ info ] www.czyfastadmin.com:88/index/test [运行时间：0.072143s][吞吐率：13.86req/s] [内存消耗：2,315.77kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000149s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002807s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'test',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000794s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:09:42+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.065828s][吞吐率：15.19req/s] [内存消耗：2,314.97kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002569s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000907s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:09:46+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.038206s][吞吐率：26.17req/s] [内存消耗：2,314.97kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001633s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000474s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:12:29+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.050690s][吞吐率：19.73req/s] [内存消耗：1,988.01kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001619s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Route.php:986]
+---------------------------------------------------------------
+[ 2018-09-06T14:12:33+08:00 ] 0.0.0.0 GET /test.html
+[ info ] www.czyfastadmin.com:88/test.html [运行时间：0.044554s][吞吐率：22.44req/s] [内存消耗：1,988.05kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000334s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002715s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Route.php:986]
+---------------------------------------------------------------
+[ 2018-09-06T14:13:02+08:00 ] 0.0.0.0 GET /test.html
+[ info ] www.czyfastadmin.com:88/test.html [运行时间：0.054316s][吞吐率：18.41req/s] [内存消耗：1,988.42kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001668s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 0[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Route.php:987]
+---------------------------------------------------------------
+[ 2018-09-06T14:13:05+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.037499s][吞吐率：26.67req/s] [内存消耗：1,988.38kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002817s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 0[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Route.php:987]
+---------------------------------------------------------------
+[ 2018-09-06T14:13:07+08:00 ] 0.0.0.0 GET /test
+[ info ] www.czyfastadmin.com:88/test [运行时间：0.047598s][吞吐率：21.01req/s] [内存消耗：1,988.38kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001722s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 0[/Applications/MAMP/htdocs/fastadmin/thinkphp/library/think/Route.php:987]
+---------------------------------------------------------------
+[ 2018-09-06T14:13:47+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.041546s][吞吐率：24.07req/s] [内存消耗：2,315.82kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001593s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000486s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:13:48+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.046070s][吞吐率：21.71req/s] [内存消耗：2,315.82kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000079s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004200s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001959s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:13:50+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.036710s][吞吐率：27.24req/s] [内存消耗：2,315.82kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001558s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000494s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:13:54+08:00 ] 0.0.0.0 GET /test/index
+[ info ] www.czyfastadmin.com:88/test/index [运行时间：0.032967s][吞吐率：30.33req/s] [内存消耗：1,987.84kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001560s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:13:57+08:00 ] 0.0.0.0 GET /test/index.htmk
+[ info ] www.czyfastadmin.com:88/test/index.htmk [运行时间：0.048837s][吞吐率：20.48req/s] [内存消耗：1,987.85kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000217s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001789s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'index.htmk',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:14:00+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.037950s][吞吐率：26.35req/s] [内存消耗：2,315.82kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001519s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000407s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:15:06+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.067394s][吞吐率：14.84req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000221s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003456s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001036s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:15:09+08:00 ] 0.0.0.0 GET /test/edit.html
+[ info ] www.czyfastadmin.com:88/test/edit.html [运行时间：0.046492s][吞吐率：21.51req/s] [内存消耗：1,987.96kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000133s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002848s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'edit',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:15:35+08:00 ] 0.0.0.0 GET /test/edit.html
+[ info ] www.czyfastadmin.com:88/test/edit.html [运行时间：0.073405s][吞吐率：13.62req/s] [内存消耗：2,313.45kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002932s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/edit',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001360s ]
+[ info ] [ RUN ] app\index\controller\Test->edit[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:15:37+08:00 ] 0.0.0.0 GET /test/edit.html
+[ info ] www.czyfastadmin.com:88/test/edit.html [运行时间：0.046645s][吞吐率：21.44req/s] [内存消耗：2,313.45kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000119s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002915s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/edit',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000544s ]
+[ info ] [ RUN ] app\index\controller\Test->edit[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:15:41+08:00 ] 0.0.0.0 GET /test/edit.html
+[ info ] www.czyfastadmin.com:88/test/edit.html [运行时间：0.051652s][吞吐率：19.36req/s] [内存消耗：1,987.96kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002539s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'edit',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:15:45+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.044754s][吞吐率：22.34req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000095s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002604s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001767s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:17:22+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.065964s][吞吐率：15.16req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000089s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003865s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000953s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:17:26+08:00 ] 0.0.0.0 GET /test/edit.html
+[ info ] www.czyfastadmin.com:88/test/edit.html [运行时间：0.044794s][吞吐率：22.32req/s] [内存消耗：2,313.52kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000064s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002828s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/edit',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000958s ]
+[ info ] [ RUN ] app\index\controller\Test->edit[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:17:29+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.051796s][吞吐率：19.31req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000072s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002819s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002604s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:18:56+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.067805s][吞吐率：14.75req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002729s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000669s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:19:51+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.071950s][吞吐率：13.90req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000121s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003746s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000910s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:43:17+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.107755s][吞吐率：9.28req/s] [内存消耗：2,096.36kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000076s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004357s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000923s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot declare class app\index\controller\Test because the name is already in use[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:13]
+---------------------------------------------------------------
+[ 2018-09-06T14:43:54+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.056101s][吞吐率：17.82req/s] [内存消耗：2,096.36kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000100s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001826s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000617s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot declare class app\index\controller\Test because the name is already in use[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:13]
+---------------------------------------------------------------
+[ 2018-09-06T14:44:11+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.041012s][吞吐率：24.38req/s] [内存消耗：2,096.17kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001591s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000467s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot declare class app\index\controller\Test because the name is already in use[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:13]
+---------------------------------------------------------------
+[ 2018-09-06T14:44:36+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.056144s][吞吐率：17.81req/s] [内存消耗：2,096.23kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000112s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007591s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000523s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot declare class app\index\controller\Test because the name is already in use[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:13]
+---------------------------------------------------------------
+[ 2018-09-06T14:45:38+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.060606s][吞吐率：16.50req/s] [内存消耗：2,096.23kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000148s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007128s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000763s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot declare class app\index\controller\Test because the name is already in use[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:13]
+---------------------------------------------------------------
+[ 2018-09-06T14:46:47+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.069210s][吞吐率：14.45req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000111s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003962s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001139s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:46:59+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.052648s][吞吐率：18.99req/s] [内存消耗：2,144.25kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001876s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000489s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Access level to app\index\controller\Test::_initialize() must be public (as in class app\common\controller\Frontend)[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:12]
+---------------------------------------------------------------
+[ 2018-09-06T14:47:01+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.045252s][吞吐率：22.10req/s] [内存消耗：2,144.25kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001627s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000498s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Access level to app\index\controller\Test::_initialize() must be public (as in class app\common\controller\Frontend)[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:12]
+---------------------------------------------------------------
+[ 2018-09-06T14:47:08+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.043671s][吞吐率：22.90req/s] [内存消耗：2,316.12kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001848s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000487s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:47:24+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.080533s][吞吐率：12.42req/s] [内存消耗：2,313.22kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003207s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001071s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:47:49+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.050583s][吞吐率：19.77req/s] [内存消耗：2,096.23kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004868s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000463s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot declare class app\index\controller\Test because the name is already in use[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:13]
+---------------------------------------------------------------
+[ 2018-09-06T14:48:08+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.070400s][吞吐率：14.20req/s] [内存消耗：2,313.22kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002603s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000927s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:48:11+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.041475s][吞吐率：24.11req/s] [内存消耗：2,313.22kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001613s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000583s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:48:54+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.051979s][吞吐率：19.24req/s] [内存消耗：2,313.22kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000177s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002114s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001270s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:49:51+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.049909s][吞吐率：20.04req/s] [内存消耗：2,368.77kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001631s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000496s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\index\controller\Test::get()[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:22]
+---------------------------------------------------------------
+[ 2018-09-06T14:51:15+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.079527s][吞吐率：12.57req/s] [内存消耗：2,368.77kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000130s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004421s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000919s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\index\controller\Test::get()[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:22]
+---------------------------------------------------------------
+[ 2018-09-06T14:51:27+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.156963s][吞吐率：6.37req/s] [内存消耗：3,612.29kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000081s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003062s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000937s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039765s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.017573s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.019230s ]
+---------------------------------------------------------------
+[ 2018-09-06T14:51:42+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.137602s][吞吐率：7.27req/s] [内存消耗：3,612.45kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000134s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002948s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001090s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024235s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.017644s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.023692s ]
+---------------------------------------------------------------
+[ 2018-09-06T14:51:55+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.174176s][吞吐率：5.74req/s] [内存消耗：3,612.45kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001614s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000465s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.039694s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.035498s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.023162s ]
+---------------------------------------------------------------
+[ 2018-09-06T14:52:18+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.046846s][吞吐率：21.35req/s] [内存消耗：2,096.41kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001642s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000479s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Cannot declare class app\index\controller\Test because the name is already in use[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:13]
+---------------------------------------------------------------
+[ 2018-09-06T14:52:30+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.142954s][吞吐率：7.00req/s] [内存消耗：3,612.45kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001599s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000468s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023290s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.019704s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.020629s ]
+---------------------------------------------------------------
+[ 2018-09-06T14:53:36+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.065175s][吞吐率：15.34req/s] [内存消耗：2,743.00kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001618s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000519s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8192]Non-static method app\index\model\Test::get_list() should not be called statically[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:22]
+---------------------------------------------------------------
+[ 2018-09-06T14:55:24+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.083212s][吞吐率：12.02req/s] [内存消耗：2,369.01kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000092s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003798s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001907s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\index\controller\Test::get_list()[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:22]
+---------------------------------------------------------------
+[ 2018-09-06T14:55:26+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.049140s][吞吐率：20.35req/s] [内存消耗：2,369.01kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000250s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002441s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000527s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\index\controller\Test::get_list()[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:22]
+---------------------------------------------------------------
+[ 2018-09-06T14:55:45+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.086578s][吞吐率：11.55req/s] [内存消耗：2,369.01kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000075s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003059s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002540s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\index\controller\Test::get_list()[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:22]
+---------------------------------------------------------------
+[ 2018-09-06T14:57:47+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.053223s][吞吐率：18.79req/s] [内存消耗：2,369.01kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000070s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001892s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000520s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method app\index\controller\Test::get_list()[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:22]
+---------------------------------------------------------------
+[ 2018-09-06T14:57:56+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.045910s][吞吐率：21.78req/s] [内存消耗：2,434.05kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000242s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001834s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000816s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: data[/Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php:24]
+---------------------------------------------------------------
+[ 2018-09-06T14:58:26+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.049905s][吞吐率：20.04req/s] [内存消耗：2,317.55kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000119s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004796s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000478s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T14:59:36+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.072780s][吞吐率：13.74req/s] [内存消耗：3,462.16kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000080s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002971s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000564s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T15:00:28+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.143506s][吞吐率：6.97req/s] [内存消耗：3,648.66kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000227s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002777s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000537s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026503s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.019671s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` [ RunTime:0.016234s ]
+---------------------------------------------------------------
+[ 2018-09-06T15:00:40+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.158203s][吞吐率：6.32req/s] [内存消耗：3,648.82kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000083s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003713s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000614s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024857s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.017729s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` [ RunTime:0.031833s ]
+---------------------------------------------------------------
+[ 2018-09-06T15:05:57+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.217393s][吞吐率：4.60req/s] [内存消耗：3,648.82kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007219s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000940s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028283s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.030172s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` [ RunTime:0.041016s ]
+---------------------------------------------------------------
+[ 2018-09-06T15:21:01+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.196269s][吞吐率：5.10req/s] [内存消耗：3,649.51kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003151s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001363s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028387s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.019610s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` [ RunTime:0.021557s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:40:05+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.246314s][吞吐率：4.06req/s] [内存消耗：3,649.51kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003356s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010177s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002018s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047998s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.019134s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` [ RunTime:0.020964s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:40:05+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] www.czyfastadmin.com:88/favicon.ico [运行时间：0.049735s][吞吐率：20.11req/s] [内存消耗：1,986.20kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001730s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

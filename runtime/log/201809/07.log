@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+[ 2018-09-07T16:06:31+08:00 ] 0.0.0.0 GET /test/index.html
+[ info ] www.czyfastadmin.com:88/test/index.html [运行时间：0.272636s][吞吐率：3.67req/s] [内存消耗：3,649.50kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001983s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009050s ]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 'index/test/index',
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.czyfastadmin.com:88',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/MAMP/htdocs/fastadmin/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001442s ]
+[ info ] [ RUN ] app\index\controller\Test->index[ /Applications/MAMP/htdocs/fastadmin/application/index/controller/Test.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033885s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_test` [ RunTime:0.025332s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_test` [ RunTime:0.041244s ]

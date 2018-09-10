@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="trent-slider">
+		<!-- banner内容 -->
+		{volist name='banner' id='vo' key='key'}
+		{eq name='key' value='1'}
+		<div class="t-slide current-t-slide"><img onclick="href_url('{$vo.url}','tab')" src="__CDN__{$vo.image}" alt="{$vo.keywords}" /></div>
+		{else/}
+		<div class="t-slide"><img onclick="href_url('{$vo.url}','tab')" src="__CDN__{$vo.image}" alt="{$vo.keywords}" /></div>
+		{/eq}
+		{/volist}
+		<!-- 左右箭头和底部标记 -->
+		<div class="arrow right-arrow">
+			<div class="arrow-container">
+				<div class="arrow-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+			</div>
+		</div>
+		<div class="arrow left-arrow">
+			<div class="arrow-container">
+				<div class="arrow-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+			</div>
+		</div>
+		<div class="t-dots-container">
+			<div class="t-slide-dots-wrap">
+				<div class="t-slide-dots"> </div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="__CDN__/assets/index/css/banner/htmleaf-demo.css">
+<link rel="stylesheet" href="__CDN__/assets/index/css/banner/main.css">
+<script src="__CDN__/assets/index/js/main.js"></script>

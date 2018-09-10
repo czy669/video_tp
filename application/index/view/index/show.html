@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	{include file='common/meta'}
+</head>
+<body>
+
+<!-- 头部 -->
+{include file='common/header'}
+
+<!-- 内容 -->
+<div class="show_content">
+	<!-- 路径  -->
+	<div class="show_path">
+		<a onclick="href_url('/index/index/index.html')">首页</a> > <a onclick="href_url('/index/index/list.html?list&area_id={$data.area_id}')">{$data.area_name}</a>
+	</div>
+	
+	<!-- 标题 -->
+	<div class="show_path">
+		<h3>{$data.title}</h3>
+	</div>
+	
+	<div class="content show_con">
+		<div class="show_l">
+			<div class="show_l_con">
+				<video id="my_video" width="100%" height="100%" controls poster="__CDN__{$data.cover}">
+					<source src="__CDN__{$data.videopath}" type="video/mp4">
+					<source src="__CDN__{$data.videopath}" type="video/webm">
+					<source src="__CDN__{$data.videopath}" type="video/ogg">
+				</video>
+			</div>
+		</div>
+		<div class="show_r">
+			{volist name="data_left" id="vo"}
+			<div class="show_r_con">
+				<div class="show_r_con_l"><img onclick="href_url('/index/index/show.html?id={$vo.id}')" src="{$vo.cover}" /></div>
+				<div class="show_r_con_r">
+					<div class="show_r_con_r_title"><a onclick="href_url('/index/index/show.html?id={$vo.id}')">{$vo.title}</a></div>
+					<div class="show_r_con_r_hits"><span>播放量：{$vo.hits}</span></div>
+				</div>
+			</div>
+			{/volist}
+			
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 详情简介 -->
+	<div class="jianjie_title_top">
+		<div class="jianjie_title"><h3><span>视频名称：</span>{$data.title}</h3></div>
+		<div class="jianjie_title">
+			<span>热度：</span><b>{$data.hits}</b>
+			<span class="jianjie_title_mleft">上传日期：</span><b>{$data.createtime|datetime}</b>
+			<span class="jianjie_title_mleft">标签：</span><b>{$data.tag}</b>
+		</div>
+	</div>
+	<div class="jianjie_content">
+		<!-- 过渡线 -->
+		<div class="hr_content"></div>
+		<div class="jianjie_title">
+			<span>分享链接：</span><b id="txt_CopyLink">{$url_path}</b> <a onclick="copyToClipboard()">点击复制</a>
+		</div>
+	</div>
+</div>
+
+
+<!-- 详情内容下边的推荐 -->
+{include file='common/recommend'}
+
+<!-- 过渡线 -->
+<div class="hr_content"></div>
+
+<!-- 底部 -->
+{include file='common/footer'}
+</body>
+<script src="__CDN__/assets/js/video.min.js"></script>
+<script>
+    var myPlayer = videojs('my_video');
+    videojs("my_video").ready(function(){
+        var myPlayer = this;
+        myPlayer.play();
+    });
+</script>
+</html>

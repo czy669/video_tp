@@ -1,0 +1,22 @@
+<div class="content roll">
+	<div class="g1">
+		<ul>
+			{volist name="data_list" id="vo" key="key"}
+			<li><div class="content_c">
+					<div class="content_c_img"><a onclick="href_url('/index/index/show.html?id={$vo.id}')"><img src="__CDN__{$vo.cover}"></a></div>
+					<div class="content_c_title"><a onclick="href_url('/index/index/show.html?id={$vo.id}')">{$vo.title}</a></div>
+					<div class="content_c_bottom"><span>添加时间：{$vo.createtime,'Y-m-d'|datetime}</span><span class="content_c_bottom_hits">点击量：{$vo.hits}</span></div>
+			</div></li>
+			{/volist}
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript" src="__CDN__/assets/index/recommend/jquery.imgscroll.min.js"></script>
+<script type="text/javascript">
+    $(".g1").imgscroll({
+        speed: 10, //图片滚动速度
+        amount: 0, //图片滚动过渡时间
+        dir: "left"   // "left" 或 "up" 向左或向上滚动
+    });
+</script>

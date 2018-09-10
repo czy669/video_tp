@@ -1,0 +1,47 @@
+<div class="top">
+	<div class="top_c">
+		<div class="top_c_logo"><a href="/index/index/index.html"><img src="__CDN__/assets/index/images/logo108x35_black.png" /></a></div>
+		<div class="top_c_content">
+			<form action="/index/index/list.html" method="get">
+				<input type="text" id="key" name="key" value="{notempty name='key'}{$key}{/notempty}">
+				<a onclick="search_key(this)">&nbsp;</a>
+			</form>
+		</div>
+		<div class="top_c_r">
+			<ul>
+				{empty name="userinfo" value=""}
+				<li><a onclick="href_url('/index/user/register.html','tab')" href="javascript:void(0)">注册</a></li>
+				<li><a onclick="href_url('/index/user/login.html','tab')" href="javascript:void(0)">登录</a></li>
+				{else /}
+				<li><a onclick="href_url('/index/user/index.html')" style="color: #ffffff;" href="javascript:void(0)">欢迎用户：{$user.nickname}</a></li>
+				{/empty}
+				<li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+				<li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!-- 滚动出现导航条 -->
+<div class="top headertop">
+	<div class="headertop_con">
+		{volist name="header" id="vo"}
+		<a onclick="href_url('{$vo.url}')">{$vo.nickname}</a>
+		{/volist}
+	</div>
+</div>
+<script type="text/javascript">
+	//页面加载完成后执行
+    $(document).ready(function(){
+        //检测滚动条位置出现导航条
+        $(window).scroll(function(){
+            var top = $(window).scrollTop();
+            if(top > 100){
+                $('.headertop').slideDown();
+            }else{
+                $('.headertop').slideUp();
+            }
+        });
+    })
+ 
+</script>

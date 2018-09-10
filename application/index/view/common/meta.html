@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<title>{$title|default=''} – {:__('The fastest framework based on ThinkPHP5 and Bootstrap')}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+
+{if isset($keywords)}
+<meta name="keywords" content="{$keywords}">
+{/if}
+{if isset($description)}
+<meta name="description" content="{$description}">
+{/if}
+<meta name="author" content="FastAdmin">
+
+<link rel="shortcut icon" href="__CDN__/assets/img/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="__CDN__/assets/index/css/style.css">
+<link href="__CDN__/assets/index/css/banner/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="__CDN__/assets/css/frontend.css" rel="stylesheet">
+
+<!-- 引入jquery库 -->
+<script type="text/javascript" src="__CDN__/assets/index/js/jquery-1.11.0.min.js"></script>
+
+<!-- 引入自写js -->
+<script src="__CDN__/assets/js/czy_write.js"></script>
+
+<!-- 图片懒加载js -->
+<script src="__CDN__/assets/js/jquery.lazyload.js"></script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+<script src="__CDN__/assets/js/html5shiv.js"></script>
+<script src="__CDN__/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var require = {
+        config: {$config|json_encode}
+    };
+    
+    //图片懒加载
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+	
+</script>
+
+{eq name='controller' value='user'}{/eq}
+<!-- 引入系统js -->
+<script src="__CDN__/assets/js/require{$Think.config.app_debug?'':'.min'}.js" data-main="__CDN__/assets/js/require-frontend{$Think.config.app_debug?'':'.min'}.js?v={$site.version}"></script>

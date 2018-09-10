@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>首页</title>
+	<link href="__CDN__/assets/mobile/css/index_h5.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__CDN__/assets/mobile/css/htmleaf-demo.css">
+	<link rel="stylesheet" href="__CDN__/assets/mobile/css/main.css">
+</head>
+<body>
+<div class="htmleaf-container">
+	<div class="container">
+		<div class="waterfall">
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="__CDN__/assets/index/js/jquery-1.11.0.min.js"></script>
+<script src="__CDN__/assets/mobile/js/bootstrap-waterfall.js"></script>
+<script id="waterfall-template" type="text/template">
+	{foreach name="data.data" id="vo"}
+	<ul class="list-group">
+		<li class="list-group-item">
+			<a href="show.html?id={$vo.id}">
+				<img src="__CDN__{$vo.cover}" />
+			</a>
+		</li>
+		<li class="list-group-item">
+			<div class="media">
+				<div class="media-body">
+					<h5 class="media-heading">{$vo.title}</h5>
+					<small>添加时间：{$vo.createtime,'Y-m-d'|datetime}</small>
+				</div>
+			</div>
+		</li>
+	</ul>
+	{/foreach}
+</script>
+<script>
+    $('.waterfall')
+        .data('bootstrap-waterfall-template', $('#waterfall-template').html())
+        .waterfall();
+</script>
+</body>
+</html>
