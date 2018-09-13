@@ -78,7 +78,7 @@ class Index extends Frontend
 			    $i++;
 		    }
 	    }
-	    
+
 	    $this -> assign('data',$data);
 	    //导航
 	    //关联地区
