@@ -12,6 +12,7 @@ use app\index\model\Test as tests;
 
 class Test extends Frontend {
 
+    private $res_station = ['yes','no'];
     //控制器初始化
     public function _initialize(){
 
@@ -25,6 +26,13 @@ class Test extends Frontend {
     }
 
     public function edit(){
-        echo 123;
+        echo((1<<1 | 1<<2 | 1<<3) & 1<<3);
+    }
+
+    public function test(){
+        $is_sation = 'yes';
+        dump(in_array($is_sation,$this -> res_station));
+        exit;
+        return $this -> view -> fetch();
     }
 }
