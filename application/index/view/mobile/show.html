@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>滑动翻页</title>
+	<link rel="stylesheet" type="text/css" href="__CDN__/assets/mobile/hdfay/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="__CDN__/assets/mobile/hdfay/htmleaf-demo.css">
+	<link rel="stylesheet" href="__CDN__/assets/mobile/hdfay/swiper.min.css">
+	<style>
+		.links {
+			background-color: #52b529;
+			-webkit-transition: all 1s;
+			-o-transition: all 1s;
+			transition: all 1s;
+		}
+		.links a {
+			color: #fff;
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+		}
+		.links:hover {
+			background-color: #1e824c;
+		}
+		.current {
+			background-color: #22a7f0;
+		}
+		.swiper-container {
+			width: 100%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+
+<div class="htmleaf-container">
+	<div class="container" style="height: 25vh;">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						{foreach name="data.data" id="vo"}
+						<div class="swiper-slide"><img data-id="{$vo.id}" data-cover="{$vo.cover}" data-path="{$vo.videopath}" src="__CDN__{$vo.cover}"></div>
+						{/foreach}
+					</div>
+					<!-- Add Pagination -->
+					<div style="display: none;" class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="__CDN__/assets/index/js/jquery-1.11.0.min.js"></script>
+<script>
+
+</script>
+<script src="__CDN__/assets/mobile/hdfay/swiper.min.js"></script>
+<script src="__CDN__/assets/js/video.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+	//计算窗口宽 高
+    var he = $(window).height();
+    $('.swiper-container').css('height',he)
+	//页面加载完成后执行
+	$(document).ready(function () {
+        video_play(0);
+    })
+
+	//执行滑动翻页
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+        onSlideChangeEnd:function(swiper){
+            var index = swiper.activeIndex
+            video_play(index);
+        },
+    });
+
+    function video_play( index ) {
+
+        var id = $('.swiper-wrapper .swiper-slide img').eq(index).attr('data-id')
+        var path = $('.swiper-wrapper .swiper-slide img').eq(index).attr('data-path')
+        var cover = $('.swiper-wrapper .swiper-slide img').eq(index).attr('data-cover')
+	    //var con = '<video style="width: 100%; height: 100%;" poster="'+ cover +'" src="'+ path +'" controls autoplay></video>'
+		var con = '<embed src="'+ path +'" width="100%" height="100%" autostart="true" />'
+        console.log(con)
+        $('.swiper-wrapper .swiper-slide').eq(index).html( con )
+    }
+</script>
+</body>
+</html>

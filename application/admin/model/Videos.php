@@ -61,4 +61,21 @@ class Videos extends Model
     {
         return $this->belongsTo('Cate', 'cate_id', 'id', [], 'LEFT')->setEagerlyType(0);
     }
+
+    //获取最新视频
+    public function get_zx_video_list($size = 10){
+        $data = $this -> order('id','desc')-> limit($size) -> select() -> toArray();
+        return $data;
+    }
+
+    //获取最热视频
+    public function get_zr_video_list($size = 10){
+        $data = $this -> order(array('id'=>'asc','hits'=>'desc')) -> limit($size) -> select() -> toArray();
+        return $data;
+    }
+
+    //更新数据
+    public function update_video_list($where, $type){
+        return $this -> where( $where ) -> setField('type', $type);
+    }
 }
