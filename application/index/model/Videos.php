@@ -22,7 +22,7 @@ class Videos extends Model
 	
 	//读取配置内容
 	public function get_videos_list($where , $pagesize=20 , $order = 'id desc'){
-		$data = $this -> where($where) -> order($order) ->  paginate( $pagesize ) -> toArray();
+		$data = $this -> where($where) -> order($order) ->  paginate( $pagesize );
 		return $data;
 	}
 	
