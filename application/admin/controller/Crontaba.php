@@ -9,6 +9,7 @@ namespace app\admin\controller;
 
 use app\admin\model\Videos;
 use think\db;
+use think\Exception;
 
 class Crontaba {
     //精彩推荐
@@ -43,7 +44,6 @@ class Crontaba {
         //重置最新视频
         echo $this -> model -> update_video_list(array('id' => array("in",$zx_ids)), $this -> zx);
 
-
         //重置最热视频
         $zr_where['type'] = $this -> zr;
         $zr_data['type'] = '';
@@ -75,6 +75,9 @@ class Crontaba {
         foreach ($data as $k => $v){
             //处理图片
             $newcover = $this -> img_zoom( $v['cover'] );
+            if( !$newcover ){
+                continue;
+            }
             db::table('fa_videos') -> where('id', $v['id']) -> setField('cover', $newcover);
             $num = $v['id'];
         }
@@ -94,11 +97,17 @@ class Crontaba {
         $name = $this -> img_name( $img );
 
         //处理图片
-        $image = \think\Image::open( $img );
-        $image -> thumb(255,150) -> save( $name );
-        if( !empty($image) ){
-            return str_replace( $this -> path,'', $name);
+        try{
+            $image = \think\Image::open( $img );
+            if(!$image){ return false;}
+            $image -> thumb(255,150) -> save( $name );
+            if( !empty($image) ){
+                return str_replace( $this -> path,'', $name);
+            }
+        }catch (Exception $e){
+
         }
+
     }
 
     //生成新的图片名称
