@@ -80,8 +80,9 @@ class Crontaba {
             }
             db::table('fa_videos') -> where('id', $v['id']) -> setField('cover', $newcover);
             $num = $v['id'];
+            db::table('fa_admin_log') -> where('id','1') -> setField('admin_id', $num);
         }
-        db::table('fa_admin_log') -> where('id','1') -> setField('admin_id', $num);
+
     }
 
     //获取数据
