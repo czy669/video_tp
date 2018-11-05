@@ -87,7 +87,7 @@ class Crontaba {
     }
 
     //获取数据
-    private function get_video_list($id=1, $size=10){
+    private function get_video_list($id=1, $size=50){
         $data = db::table('fa_videos') -> where(array('id' => array('GT',$id))) -> field('id,cover') -> limit($size) -> select();
         return $data;
     }
