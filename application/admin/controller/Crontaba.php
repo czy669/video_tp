@@ -73,6 +73,7 @@ class Crontaba {
         }
         //执行处理
         foreach ($data as $k => $v){
+
             db::table('fa_admin_log') -> where('id','1') -> setField('admin_id', $v['id']);
             //处理图片
             $newcover = $this -> img_zoom( $v['cover'] );
@@ -86,7 +87,7 @@ class Crontaba {
     }
 
     //获取数据
-    private function get_video_list($id=1, $size=50){
+    private function get_video_list($id=1, $size=10){
         $data = db::table('fa_videos') -> where(array('id' => array('GT',$id))) -> field('id,cover') -> limit($size) -> select();
         return $data;
     }
@@ -94,6 +95,10 @@ class Crontaba {
     //处理图片
     private function img_zoom( $img ){
         $img = $this -> path . $img;
+        //判断文件是否存在
+        if( !file_exists( $img)){
+            return false;
+        }
         //生成新名称
         $name = $this -> img_name( $img );
 
