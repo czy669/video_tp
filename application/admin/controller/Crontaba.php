@@ -6,10 +6,11 @@
  * Time: 下午3:26
  */
 namespace app\admin\controller;
+
 use app\admin\model\Videos;
+use think\db;
 
 class Crontaba {
-
     //精彩推荐
     private $jc = 'index1';
     //最新视频
@@ -19,9 +20,16 @@ class Crontaba {
 
     protected $model = null;
 
+    //当前路径
+    private $path = ROOT_PATH . 'public';
+    //初始化
+    public function __construct(){
+        $this -> model = new Videos();
+    }
+
     //自动更新首页视频
     public function index(){
-        $this -> model = new Videos();
+
         //重置最新视频
         $zx_where['type'] = $this -> zx;
         $zx_data['type'] = '';
@@ -50,5 +58,54 @@ class Crontaba {
         //重置最新视频
         echo $this -> model -> update_video_list(array('id' => array("in",$zr_ids)), $this -> zr);
 
+    }
+
+    //处理图片太大
+    public function autoImgSize(){
+
+        $page_row = db::table('fa_admin_log') -> where('id','1') -> field('admin_id') -> find();
+        $id = $page_row['admin_id'];
+        if($id == 1){ $id = 0;}
+        //获取数据
+        $data = $this -> get_video_list( $id );
+        if(!$data){
+            exit;
+        }
+        //执行处理
+        foreach ($data as $k => $v){
+            //处理图片
+            $newcover = $this -> img_zoom( $v['cover'] );
+            db::table('fa_videos') -> where('id', $v['id']) -> setField('cover', $newcover);
+            $num = $v['id'];
+        }
+        db::table('fa_admin_log') -> where('id','1') -> setField('admin_id', $num);
+    }
+
+    //获取数据
+    private function get_video_list($id=1, $size=50){
+        $data = db::table('fa_videos') -> where(array('id' => array('GT',$id))) -> field('id,cover') -> limit($size) -> select();
+        return $data;
+    }
+
+    //处理图片
+    private function img_zoom( $img ){
+        $img = $this -> path . $img;
+        //生成新名称
+        $name = $this -> img_name( $img );
+
+        //处理图片
+        $image = \think\Image::open( $img );
+        $image -> thumb(255,150) -> save( $name );
+        if( !empty($image) ){
+            return str_replace( $this -> path,'', $name);
+        }
+    }
+
+    //生成新的图片名称
+    private function img_name( $name ){
+        $name_arr = explode( '/', $name);
+        $name_arr[ count( $name_arr )-1 ] = 'small_' . $name_arr[ count( $name_arr )-1 ];
+        $sname = implode('/', $name_arr);
+        return $sname;
     }
 }
