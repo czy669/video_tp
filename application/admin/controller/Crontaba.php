@@ -73,14 +73,14 @@ class Crontaba {
         }
         //执行处理
         foreach ($data as $k => $v){
+            db::table('fa_admin_log') -> where('id','1') -> setField('admin_id', $v['id']);
             //处理图片
             $newcover = $this -> img_zoom( $v['cover'] );
             if( !$newcover ){
                 continue;
             }
             db::table('fa_videos') -> where('id', $v['id']) -> setField('cover', $newcover);
-            $num = $v['id'];
-            db::table('fa_admin_log') -> where('id','1') -> setField('admin_id', $num);
+
         }
 
     }
