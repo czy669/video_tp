@@ -93,7 +93,7 @@ class Crontaba {
     }
 
     //处理图片
-    private function img_zoom( $img ){
+    public function img_zoom( $img ){
         $img = $this -> path . $img;
         //判断文件是否存在
         if( !file_exists( $img)){
