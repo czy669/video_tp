@@ -79,15 +79,13 @@ class Mobile extends Frontend
     private function video_list_data(){
         //先取缓存数据
         //echo Cache::rm('mobile_video_data');
-        $data = cache('mobile_video_data');
-        if(empty($data)){
-            $videos = new Videos();
-            $where['status'] = 1;   //状态
-            $pagesize = 100;    //显示数目
-            $data = $videos -> get_videos_list($where , $pagesize ) -> toArray();
-            //将数据保存到缓存
-            cache('mobile_video_data',$data,'3600');
-        }
+        //$data = cache('mobile_video_data');
+        $videos = new Videos();
+        $where['status'] = 1;   //状态
+        $pagesize = 100;    //显示数目
+        $data = $videos -> get_videos_rand($pagesize ) -> toArray();
+        //将数据保存到缓存
+        //cache('mobile_video_data',$data,'3600');
         return $data;
     }
 

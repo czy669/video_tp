@@ -1006,3 +1006,1041 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:host=127.0.0.1;dbname=dage_gouwuduodu;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.000686s ]
 [ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '114.251.232.116' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548226074) [ RunTime:0.007206s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:50:24+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.310630s][吞吐率：3.22req/s] [内存消耗：3,522.14kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000517s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003893s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002544s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ VIEW ] /Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+  4 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.047683s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.070731s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244223) [ RunTime:0.011164s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.013011s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.008571s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY `id` DESC LIMIT 0,100 [ RunTime:0.004488s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:50:31+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.126893s][吞吐率：7.88req/s] [内存消耗：3,522.14kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000108s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001565s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000298s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ VIEW ] /Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+  4 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001395s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.009922s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244231) [ RunTime:0.004484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.009450s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY `id` DESC LIMIT 0,100 [ RunTime:0.001339s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:50:56+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.153953s][吞吐率：6.50req/s] [内存消耗：3,483.57kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000148s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003503s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002069s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003559s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.003745s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244256) [ RunTime:0.002900s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.003698s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY `id` DESC LIMIT 0,100 [ RunTime:0.002233s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:51:53+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.113109s][吞吐率：8.84req/s] [内存消耗：3,171.59kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003269s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000598s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002278s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.010210s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244313) [ RunTime:0.002480s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:51:55+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.066366s][吞吐率：15.07req/s] [内存消耗：3,171.59kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003411s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000273s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.003193s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244315) [ RunTime:0.004204s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:51:55+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.052652s][吞吐率：18.99req/s] [内存消耗：3,171.59kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001501s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000247s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001815s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.004237s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244315) [ RunTime:0.002479s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:52:48+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：3,171.65kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002712s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001089s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001175s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.005703s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244368) [ RunTime:0.002991s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:52:49+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.070253s][吞吐率：14.23req/s] [内存消耗：3,171.65kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001646s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000291s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000968s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.006510s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244369) [ RunTime:0.003130s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:52:49+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.052746s][吞吐率：18.96req/s] [内存消耗：3,171.65kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001210s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000286s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001298s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.005180s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244369) [ RunTime:0.003575s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:52:50+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.047853s][吞吐率：20.90req/s] [内存消耗：3,171.65kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001200s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000569s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000838s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.001657s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244370) [ RunTime:0.002906s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:52:50+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.041628s][吞吐率：24.02req/s] [内存消耗：3,171.65kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001273s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000205s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.002298s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244370) [ RunTime:0.000875s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:55:08+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.181820s][吞吐率：5.50req/s] [内存消耗：3,419.23kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006388s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000630s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001768s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.008303s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244508) [ RunTime:0.004110s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.004159s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY rand() LIMIT 100 [ RunTime:0.035182s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:55:15+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.099217s][吞吐率：10.08req/s] [内存消耗：3,419.22kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001947s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000466s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001441s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.002164s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244515) [ RunTime:0.002542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.017237s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY rand() LIMIT 100 [ RunTime:0.007954s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:55:27+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.137830s][吞吐率：7.26req/s] [内存消耗：3,531.66kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003498s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000653s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ VIEW ] /Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+  4 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001832s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244527) [ RunTime:0.001529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.003740s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY rand() LIMIT 100 [ RunTime:0.002536s ]
+[ error ] [8]未定义数组索引: data[/Users/didi/czydidi/www/video_tp/runtime/temp/8fa4cf2f46bcb3546d1d88b80c45bb9a.php:19]
+---------------------------------------------------------------
+[ 2019-01-23T19:55:28+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.070637s][吞吐率：14.16req/s] [内存消耗：3,531.41kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001745s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000306s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ VIEW ] /Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+  4 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001343s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.004917s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244528) [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.003947s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY rand() LIMIT 100 [ RunTime:0.003371s ]
+[ error ] [8]未定义数组索引: data[/Users/didi/czydidi/www/video_tp/runtime/temp/8fa4cf2f46bcb3546d1d88b80c45bb9a.php:19]
+---------------------------------------------------------------
+[ 2019-01-23T19:55:54+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.125071s][吞吐率：8.00req/s] [内存消耗：3,531.46kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007395s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000321s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ VIEW ] /Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+  4 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001432s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.013485s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244554) [ RunTime:0.012107s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.005913s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY rand() LIMIT 100 [ RunTime:0.007706s ]
+[ error ] [8]未定义数组索引: data[/Users/didi/czydidi/www/video_tp/runtime/temp/8fa4cf2f46bcb3546d1d88b80c45bb9a.php:19]
+---------------------------------------------------------------
+[ 2019-01-23T19:56:14+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.137679s][吞吐率：7.26req/s] [内存消耗：3,652.68kb] [文件加载：74]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002881s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000675s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ VIEW ] /Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+  4 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000886s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244574) [ RunTime:0.003571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.002739s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY rand() LIMIT 100 [ RunTime:0.002340s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:56:14+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_a17c6c608fbba3a2123aa2d9b403769e.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_a17c6c608fbba3a2123aa2d9b403769e.j [运行时间：0.066239s][吞吐率：15.10req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001509s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_a17c6c608fbba3a2123aa2d9b403769e.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:14+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_5f30285960ac564e48ad372e3f55ac19.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_5f30285960ac564e48ad372e3f55ac19.j [运行时间：0.044766s][吞吐率：22.34req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001698s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_5f30285960ac564e48ad372e3f55ac19.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:14+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j [运行时间：0.056925s][吞吐率：17.57req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000072s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003752s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_5a55094a05bdd4027660bdf22304456f.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:14+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_e8cec7659616d2fc0a57eae95ab30b49.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_e8cec7659616d2fc0a57eae95ab30b49.j [运行时间：0.082621s][吞吐率：12.10req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000072s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004542s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_e8cec7659616d2fc0a57eae95ab30b49.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:28+08:00 ] 127.0.0.1 GET /index/mobile/index
+[ info ] www.czyfastvideo.com/index/mobile/index [运行时间：0.086995s][吞吐率：11.49req/s] [内存消耗：3,406.41kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004387s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000505s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Mobile->index[ /Users/didi/czydidi/www/video_tp/application/index/controller/Mobile.php ]
+[ info ] [ VIEW ] /Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'title',
+  4 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:host=127.0.0.1;dbname=fastvideo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.001446s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , 'index/mobile/index' , 'index' , '127.0.0.1' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0' , 1548244588) [ RunTime:0.001248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `status` = 1 ORDER BY rand() LIMIT 100 [ RunTime:0.002234s ]
+---------------------------------------------------------------
+[ 2019-01-23T19:56:29+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_5f30285960ac564e48ad372e3f55ac19.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_5f30285960ac564e48ad372e3f55ac19.j [运行时间：0.033836s][吞吐率：29.55req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002035s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_5f30285960ac564e48ad372e3f55ac19.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:29+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j [运行时间：0.039760s][吞吐率：25.15req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002505s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_5a55094a05bdd4027660bdf22304456f.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:29+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_e8cec7659616d2fc0a57eae95ab30b49.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_e8cec7659616d2fc0a57eae95ab30b49.j [运行时间：0.154130s][吞吐率：6.49req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001808s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_e8cec7659616d2fc0a57eae95ab30b49.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:34+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j [运行时间：0.031045s][吞吐率：32.21req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001982s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_5a55094a05bdd4027660bdf22304456f.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-23T19:56:36+08:00 ] 127.0.0.1 GET /uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j
+[ info ] www.czyfastvideo.com/uploads/20180717/small_small_5a55094a05bdd4027660bdf22304456f.j [运行时间：0.056689s][吞吐率：17.64req/s] [内存消耗：1,738.08kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004818s ]
+[ info ] [ LANG ] /Users/didi/czydidi/www/video_tp/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20180717',
+    2 => 'small_small_5a55094a05bdd4027660bdf22304456f.j',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.czyfastvideo.com/index/mobile/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.czyfastvideo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

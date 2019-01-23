@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:83:"/Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html";i:1543289809;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:83:"/Users/didi/czydidi/www/video_tp/public/../application/index/view/mobile/index.html";i:1548244572;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="waterfall">
 
-			<?php if(is_array($data['data']) || $data['data'] instanceof \think\Collection || $data['data'] instanceof \think\Paginator): if( count($data['data'])==0 ) : echo "" ;else: foreach($data['data'] as $key=>$vo): ?>
+			<?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): if( count($data)==0 ) : echo "" ;else: foreach($data as $key=>$vo): ?>
 			<ul class="list-group">
 				<li class="list-group-item">
 					<a href="show.html?id=<?php echo $vo['id']; ?>">
