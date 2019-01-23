@@ -1,0 +1,262 @@
+---------------------------------------------------------------
+[ 2018-09-25T11:24:58+08:00 ] 203.208.60.60 GET /
+[ info ] dage.gouwuduoduo.com/ [运行时间：0.352087s][吞吐率：2.84req/s] [内存消耗：3,597.55kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001920s ]
+[ info ] [ LANG ] /www/wwwroot/dage.gouwuduoduo.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'dage.gouwuduoduo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/dage.gouwuduoduo.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000384s ]
+[ info ] [ LANG ] /www/wwwroot/dage.gouwuduoduo.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/dage.gouwuduoduo.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/dage.gouwuduoduo.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'footer',
+  4 => 'controller',
+  5 => 'header',
+  6 => 'title',
+  7 => 'banner',
+  8 => 'data',
+  9 => 'area_list',
+  10 => 'cate_list',
+  11 => 'trans_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006825s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.004987s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'footer' ) ORDER BY `weigh` DESC [ RunTime:0.004560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.005139s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , '/' , 'index' , '203.208.60.60' , 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' , 1537845898) [ RunTime:0.021087s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'header' ) ORDER BY `weigh` DESC [ RunTime:0.004563s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'banner' ) ORDER BY `weigh` DESC [ RunTime:0.004564s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index1' ) ORDER BY `weigh` DESC [ RunTime:0.004486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.005012s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index1' LIMIT 1 [ RunTime:0.004578s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index1' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.004596s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index2' ) ORDER BY `weigh` DESC [ RunTime:0.004489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index2' LIMIT 1 [ RunTime:0.004586s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index2' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.004631s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index3' ) ORDER BY `weigh` DESC [ RunTime:0.004474s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index3' LIMIT 1 [ RunTime:0.004608s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index3' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.004583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_area` [ RunTime:0.004872s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_area` WHERE  `status` = 1 [ RunTime:0.004465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_cate` [ RunTime:0.004819s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_cate` WHERE  `status` = 1 [ RunTime:0.004450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_trans` [ RunTime:0.004814s ]
+[ sql ] [ SQL ] SELECT name,count(name) as num FROM `fa_trans` GROUP BY `name` ORDER BY `hots` DESC LIMIT 6 [ RunTime:0.004442s ]
+---------------------------------------------------------------
+[ 2018-09-25T11:25:01+08:00 ] 203.208.60.20 GET /assets/js/frontend/index.js?v=1537056000
+[ info ] dage.gouwuduoduo.com/assets/js/frontend/index.js?v=1537056000 [运行时间：0.026268s][吞吐率：38.07req/s] [内存消耗：1,721.96kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001655s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'referer' => 'http://dage.gouwuduoduo.com/',
+  'host' => 'dage.gouwuduoduo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T11:25:02+08:00 ] 203.208.60.27 GET /assets/js/frontend/index.js?v=1537845897
+[ info ] dage.gouwuduoduo.com/assets/js/frontend/index.js?v=1537845897 [运行时间：0.016797s][吞吐率：59.53req/s] [内存消耗：1,721.96kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000978s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'referer' => 'http://dage.gouwuduoduo.com/',
+  'host' => 'dage.gouwuduoduo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T20:19:08+08:00 ] 203.208.60.20 GET /
+[ info ] dage.gouwuduoduo.com/ [运行时间：0.329210s][吞吐率：3.04req/s] [内存消耗：3,597.56kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004485s ]
+[ info ] [ LANG ] /www/wwwroot/dage.gouwuduoduo.com/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'dage.gouwuduoduo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/dage.gouwuduoduo.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000407s ]
+[ info ] [ LANG ] /www/wwwroot/dage.gouwuduoduo.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/dage.gouwuduoduo.com/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/dage.gouwuduoduo.com/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'footer',
+  4 => 'controller',
+  5 => 'header',
+  6 => 'title',
+  7 => 'banner',
+  8 => 'data',
+  9 => 'area_list',
+  10 => 'cate_list',
+  11 => 'trans_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007976s ] mysql:host=47.94.166.69;dbname=dage_gouwuduodu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_category` [ RunTime:0.005729s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'footer' ) ORDER BY `weigh` DESC [ RunTime:0.005310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_access_log` [ RunTime:0.005772s ]
+[ sql ] [ SQL ] INSERT INTO `fa_access_log` (`user_id` , `url` , `from_url` , `ip` , `useragent` , `createtime`) VALUES (0 , '/' , 'index' , '203.208.60.20' , 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' , 1537877948) [ RunTime:0.013690s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'header' ) ORDER BY `weigh` DESC [ RunTime:0.005545s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'banner' ) ORDER BY `weigh` DESC [ RunTime:0.005285s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index1' ) ORDER BY `weigh` DESC [ RunTime:0.005167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_videos` [ RunTime:0.006067s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index1' LIMIT 1 [ RunTime:0.005276s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index1' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.005334s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index2' ) ORDER BY `weigh` DESC [ RunTime:0.005147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index2' LIMIT 1 [ RunTime:0.005339s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index2' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.005269s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_category` WHERE  (  `type` = 'index3' ) ORDER BY `weigh` DESC [ RunTime:0.005130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_videos` WHERE  `type` = 'index3' LIMIT 1 [ RunTime:0.005244s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_videos` WHERE  `type` = 'index3' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.005302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_area` [ RunTime:0.005514s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_area` WHERE  `status` = 1 [ RunTime:0.005078s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_cate` [ RunTime:0.005529s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_cate` WHERE  `status` = 1 [ RunTime:0.005156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_trans` [ RunTime:0.005518s ]
+[ sql ] [ SQL ] SELECT name,count(name) as num FROM `fa_trans` GROUP BY `name` ORDER BY `hots` DESC LIMIT 6 [ RunTime:0.005138s ]
+---------------------------------------------------------------
+[ 2018-09-25T20:19:20+08:00 ] 203.208.60.83 GET /assets/js/frontend/index.js?v=1537056000
+[ info ] dage.gouwuduoduo.com/assets/js/frontend/index.js?v=1537056000 [运行时间：0.026757s][吞吐率：37.37req/s] [内存消耗：1,721.96kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001524s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'referer' => 'http://dage.gouwuduoduo.com/',
+  'host' => 'dage.gouwuduoduo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-25T20:19:21+08:00 ] 203.208.60.105 GET /assets/js/frontend/index.js?v=1537877948
+[ info ] dage.gouwuduoduo.com/assets/js/frontend/index.js?v=1537877948 [运行时间：0.024819s][吞吐率：40.29req/s] [内存消耗：1,721.96kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001421s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate,br',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+  'from' => 'googlebot(at)googlebot.com',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-language' => 'en-US',
+  'referer' => 'http://dage.gouwuduoduo.com/',
+  'host' => 'dage.gouwuduoduo.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

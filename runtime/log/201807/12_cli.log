@@ -1,0 +1,17 @@
+[ 2018-07-12T13:41:03+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.010918s ] mysql:host=127.0.0.1;dbname=dage_gouwuduodu;charset=utf8
+[ 2018-07-12T13:41:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'videos' [ RunTime:0.000507s ]
+[ 2018-07-12T13:41:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_videos' [ RunTime:0.000405s ]
+[ 2018-07-12T13:41:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'area' [ RunTime:0.000269s ]
+[ 2018-07-12T13:41:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_area' [ RunTime:0.000316s ]
+[ 2018-07-12T13:41:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'cate' [ RunTime:0.000285s ]
+[ 2018-07-12T13:41:03+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_cate' [ RunTime:0.000292s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.011341s ] mysql:host=127.0.0.1;dbname=dage_gouwuduodu;charset=utf8
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'videos' [ RunTime:0.000462s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_videos' [ RunTime:0.000395s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'area' [ RunTime:0.000270s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_area' [ RunTime:0.000316s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'cate' [ RunTime:0.000286s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_cate' [ RunTime:0.000294s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'dage_gouwuduodu' AND table_name = 'fa_videos' ORDER BY ORDINAL_POSITION [ RunTime:0.000848s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'dage_gouwuduodu' AND table_name = 'fa_area' ORDER BY ORDINAL_POSITION [ RunTime:0.000616s ]
+[ 2018-07-12T13:42:18+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'dage_gouwuduodu' AND table_name = 'fa_cate' ORDER BY ORDINAL_POSITION [ RunTime:0.000614s ]
