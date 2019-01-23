@@ -64,11 +64,12 @@ class Mobile extends Frontend
 	public function show(){
 		//获取视频id
 		$id = $this -> request ->param('id');
-		
-		//读取视频信息
-        $data = $this -> video_list_data();
 
+        $videos = new Videos();
+		//读取视频信息
+        $data = $videos -> get_videos_show( $id );
 		$this -> assign('data',$data);
+
 		return $this -> view -> fetch();
 	}
 
@@ -93,4 +94,6 @@ class Mobile extends Frontend
 	public function crontab_id(){
         $this -> videos -> update_vides_id('100');
     }
+
+
 }

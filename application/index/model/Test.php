@@ -8,10 +8,17 @@
 namespace app\index\model;
 
 use think\Model;
+use traits\model\SoftDelete;
 
 class Test extends Model {
-    protected function initialize(){
-        parent::initialize();
+
+    //软删除
+    use SoftDelete;
+    protected $deleteTime = 'delete_time';
+
+    //模型初始化
+    protected static function init(){
+
     }
 
     public function get_list(){
@@ -19,8 +26,23 @@ class Test extends Model {
         return $data;
     }
 
+    /**
+     * @param $data
+     * @return false|int
+     */
     public function insert_data($data){
         $this -> data($data);
         return $this -> save();
     }
+
+    /**
+     * 软删除
+     * @param $id
+     * @return mixed
+     */
+    public function m_destroy( $id ){
+        return $this -> destroy( $id );
+    }
+
+
 }

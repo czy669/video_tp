@@ -20,7 +20,7 @@ return [
     '__alias__'   => [
         'test' => [
             'index/test',
-            ['ext'=>'html','allow'=>'index,edit']
+            ['ext'=>'html']
         ],
     ],
     //变量规则

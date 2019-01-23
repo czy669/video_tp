@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="__CDN__/assets/index/js/jquery-1.11.0.min.js"></script>
+</head>
+<body style="width: 1200px; margin: 0 auto;">
+
+<input class="is_station" type="checkbox" value="yes">yes
+<a onclick="click_a()">Click</a>
+<script>
+    function click_a() {
+        var ck = $('.is_station').is(':checked');
+        console.log(ck)
+    }
+</script>
+</body>
+</html>

@@ -101,6 +101,7 @@ return [
     'Extension'                                              => '自由可扩展',
     'Auth'                                                   => '权限管理',
     'The fastest framework based on ThinkPHP5 and Bootstrap' => '我的网站',
+    'Webname'                                                => '我的网站',
     'Features'                                               => '功能特性',
     'Home'                                                   => '首页',
     'Store'                                                  => '插件市场',

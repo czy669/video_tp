@@ -11,18 +11,26 @@
 // +----------------------------------------------------------------------
 
 use think\Env;
-
+if($_SERVER['SERVER_ADDR'] == '127.0.0.1'){
+    $bduser = 'root';
+    $dbpass = '123456';
+    $dbname = 'fastvideo';
+}else{
+    $bduser = 'dage_gouwuduodu';
+    $dbpass = 'ETSdjW3RkS';
+    $dbname = 'dage_gouwuduodu';
+}
 return [
     // 数据库类型
     'type'            => Env::get('database.type', 'mysql'),
     // 服务器地址
     'hostname'        => Env::get('database.hostname', '127.0.0.1'),
     // 数据库名
-    'database'        => Env::get('database.database', 'videodb'),
+    'database'        => Env::get('database.database', $dbname),
     // 用户名
-    'username'        => Env::get('database.username', 'root'),
+    'username'        => Env::get('database.username', $bduser),
     // 密码
-    'password'        => Env::get('database.password', 'root'),
+    'password'        => Env::get('database.password', $dbpass),
     // 端口
     'hostport'        => Env::get('database.hostport', ''),
     // 连接dsn

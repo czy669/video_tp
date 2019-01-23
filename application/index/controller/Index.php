@@ -78,7 +78,7 @@ class Index extends Frontend
 			    $i++;
 		    }
 	    }
-
+        
 	    $this -> assign('data',$data);
 	    //导航
 	    //关联地区
@@ -155,7 +155,7 @@ class Index extends Frontend
 	    
 	    //视频列表
 	    $where['status'] = '1';
-	    $data = $this -> videos -> get_videos_list( $where , 60 , $order);
+	    $data = $this -> videos -> get_videos_list( $where , 30 , $order);
 	    // 获取分页显示
 	    $page = $data->render();
 	    
